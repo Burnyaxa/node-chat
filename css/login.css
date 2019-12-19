@@ -1,0 +1,23 @@
+html{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  }
+button {
+  background-color: white;
+  border: 2px solid green;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Chatting Page</title>
+        <link rel="stylesheet" href="chat.css">
+        <script defer src="http://localhost:3001/socket.io/socket.io.js"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <H1>Super Secret Chat Room</H1><br>
+        <p>Welcome</p><p id="username"><%= name %></p>
+        <div id="message-container"></div>
+        <form id="send-container">
+          <input type="text" id="message-input">
+          <input type="submit" value="Submit">
+        </form>
+        <form action="/logout?_method=DELETE" method="POST" class="logout">
+            <button type="submit">Log out</button>
+        </form>
+        <form action="/history">
+            <button type="submit" class="history">Chat history</button>
+        </form>
+    </body>
+</html>
